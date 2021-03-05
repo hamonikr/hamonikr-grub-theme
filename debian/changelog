@@ -1,0 +1,27 @@
+hamonikr-grub-theme (2.0.0) stable; urgency=medium
+
+  * Release for hamonikr-server 2.0
+   - update theme
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 05 Mar 2021 11:40:24 +0900
+
+grub-theme-hamonikr-jin (1.1.0) jin; urgency=medium
+
+  * Updated boot/grub/themes/hamonikr-jin/theme.txt
+   - Changed font setting and add new fonts
+   - NanumSquare Regular 16
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 08 Nov 2020 16:22:21 +0900
+
+grub-theme-hamonikr-jin (1.0.1) jin; urgency=medium
+
+  * Updated boot/grub/themes/hamonikr-jin/theme.txt
+   - Changed terminal font
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 02 Nov 2020 16:21:24 +0900
+
+grub-theme-hamonikr-jin (1.0.0) jin; urgency=medium
+
+  * Initial release
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 29 Oct 2020 17:58:27 +0900
