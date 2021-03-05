@@ -3,7 +3,7 @@
 ![hamonikr-1.4](https://img.shields.io/badge/hamonikr-1.4-blueviolet)
 ![hamonikr 3.0](https://img.shields.io/badge/hamonikr-3.0-brightgreen)
 
-# grub-theme-hamonikr-jin
+# hamonikr-grub-theme
 
  * HamoniKR-ME (>= 1.4) 지원
  * 사용자 해상도 자동 감지 후 테마 적용
@@ -11,11 +11,13 @@
  * 한글 폰트로 grub 테마 제작
 
 ## include fonts 
- - Source Han Sans K Regular 16
- - DejaVu Sans Regular 16
- - Droid Sans Mono Regular 16
  - NanumSquare Regular 16
- - NanumGothicCoding Regular 16
+
+## How to convert png from icons-svg folder
+Use convert-svg-app (https://github.com/hamonikr/convert-svg)
+```
+convert-svg-app
+```
 
 # License
  * GPL v3
