@@ -1,3 +1,35 @@
+hamonikr-grub-theme (3.1.0) taebaek; urgency=medium
+
+  * Release for HamoniKR 6.0
+  * Fixed wrong grub tile variable in debian/postinst
+  * Removed hamonikr-info dependancy
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 08 Oct 2022 21:23:54 +0900
+
+hamonikr-grub-theme (3.0.2) hanla; urgency=medium
+
+  * Add pre-depends hamonikr-info
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 19 Oct 2021 18:56:13 +0900
+
+hamonikr-grub-theme (3.0.2) hanla; urgency=medium
+
+  * Fix prerm
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 07 Oct 2021 19:22:16 +0900
+
+hamonikr-grub-theme (3.0.1) hanla; urgency=medium
+
+  * Fix postinst
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 09 Sep 2021 16:06:24 +0900
+
+hamonikr-grub-theme (3.0.0) hanla; urgency=medium
+
+  * Release for HamoniKR 5.0
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 08 Apr 2021 11:55:44 +0900
+
 hamonikr-grub-theme (2.0.0) stable; urgency=medium
 
   * Release for hamonikr-server 2.0

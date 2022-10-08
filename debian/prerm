@@ -13,7 +13,7 @@ sed -i.bak '/GRUB_THEME=/d' /etc/default/grub >/dev/null 2>&1
 if [[ -f "/etc/hamonikr/info" ]] ; then  
   echo "Found HamoniKR OS Infomation"
   sed -i '/GRUB_DISTRIBUTOR=/d' /etc/default/grub >/dev/null 2>&1
-  echo "GRUB_DISTRIBUTOR=\`lsb_release -i -s 2> /dev/null || echo Debian\`" | tee -a /etc/default/grub >/dev/null 2>&1
+  echo "GRUB_DISTRIBUTOR="$(lsb_release -i -s 2> /dev/null || echo Debian) | tee -a /etc/default/grub >/dev/null 2>&1
 fi
 
 # Update grub config

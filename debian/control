@@ -7,6 +7,7 @@ Standards-Version: 3.9.5
 
 Package: hamonikr-grub-theme
 Architecture: all
+Pre-Depends: 
 Depends: grub2-common,
          ${misc:Depends},
 Replaces: grub-common         

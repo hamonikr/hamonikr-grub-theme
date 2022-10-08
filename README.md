@@ -1,17 +1,15 @@
-![hamonikr-me](https://img.shields.io/badge/hamonikr-me-orange)
-![hamonikr-64](https://img.shields.io/badge/hamonikr-64bit-green)
-![hamonikr-1.4](https://img.shields.io/badge/hamonikr-1.4-blueviolet)
-![hamonikr 3.0](https://img.shields.io/badge/hamonikr-3.0-brightgreen)
+![ubuntu-focal](https://img.shields.io/badge/ubuntu-20.04-red)
+![ubuntu-hirsute](https://img.shields.io/badge/ubuntu-21.04-red)
+![ubuntu-jammy](https://img.shields.io/badge/ubuntu-22.04-red)
+![hamonikr-hanla](https://img.shields.io/badge/hamonikr-hanla-purple)
+![hamonikr-taebaek](https://img.shields.io/badge/hamonikr-taeback-green)
 
 # hamonikr-grub-theme
 
  * HamoniKR-ME (>= 1.4) 지원
  * 사용자 해상도 자동 감지 후 테마 적용
  * 와이드 스크린의 경우 자동으로 비율을 계산
- * 한글 폰트로 grub 테마 제작
-
-## include fonts 
- - NanumSquare Regular 16
+ * Used `NanumSquare Regular 16`
 
 ## How to convert png from icons-svg folder
 Use convert-svg-app (https://github.com/hamonikr/convert-svg)
