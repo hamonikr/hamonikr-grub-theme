@@ -11,16 +11,21 @@
  * 와이드 스크린의 경우 자동으로 비율을 계산
  * Used `NanumSquare Regular 16`
 
-## How to convert png from icons-svg folder
-Use convert-svg-app (https://github.com/hamonikr/convert-svg)
+## Install
+
+### 하모니카 OS (>=5.0)
 ```
-convert-svg-app
+wget -qO- https://update.hamonikr.org/add-update-repo.apt | sudo -E bash -
+
+sudo apt install hamonikr-grub-theme
 ```
 
-# License
- * GPL v3
+### Other Ubutu base distro. (Ubuntu >=20.04)
+Release 페이지에서 배포한 최신 패키지를 다운로드 받아서 아래와 같이 설치.
 
-# Install
+sudo apt install -f ./hamonikr-grub-theme_*_amd64.deb
+
+### Install from source
 다운로드 받은 디렉토리 안으로 이동하여 아래 명령어를 입력
 
 ```sudo ./install.sh```
@@ -33,10 +38,20 @@ convert-svg-app
  * ```#GRUB_TIMEOUT_STYLE=hidden``` 처럼 해당 줄의 맨 앞에 '#' 표시를 추가하고 저장 후 ```sudo update-grub``` 으로 grub 이미지를 재생성 후 시스템을 재시작하세요.
 
 
-## How to create grub font
+### How to create grub font
 ```
 sudo grub-mkfont --output=/boot/grub/fonts/NanumGothicCoding.pf2 --size=32 ~/.local/share/fonts/NanumGothicCoding.ttf
 ```
+
+### How to convert png from icons-svg folder
+Use convert-svg-app (https://github.com/hamonikr/convert-svg)
+```
+convert-svg-app
+```
+
+# License
+ * GPL v3
+ 
 
  # 이슈 또는 버그
  사용 중 문제를 발견하시면 root@hamonikr.org 또는 https://groups.google.com/forum/m/#!forum/hamonikr 에서 알려주세요.
