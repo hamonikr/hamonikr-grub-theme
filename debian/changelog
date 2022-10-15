@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.1.1) taebaek; urgency=medium
+
+  * Update for HIDPI resolution
+  * Forced set resolution if grater than width 1920 px
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 15 Oct 2022 20:04:06 +0900
+
 hamonikr-grub-theme (3.1.0) taebaek; urgency=medium
 
   * Release for HamoniKR 6.0

@@ -12,7 +12,16 @@ echo -e "\n\t*****************************\n\t*  ${THEME_NAME} - Grub2 Theme  *\
 
 # https://en.wikipedia.org/wiki/Display_resolution
 RES=`xrandr --current | grep "*" | head -n 1 | awk -F" " '{print $1}'`
-sed -i.bak "s/.*GRUB_GFXMODE.*/GRUB_GFXMODE=${RES}/g" /etc/default/grub
+WIDTH=`xrandr --current | grep "*" | head -n 1 | awk -F" " '{print $1}' | awk -F"x" '{print $1}'`
+# Foced adjust for HIDPI Resolution
+if [ "$WIDTH" -gt "1920" ] ; then
+  echo "HIDPI"
+  sed -i.bak "s/.*GRUB_GFXMODE.*/GRUB_GFXMODE=1920x1080/g" /etc/default/grub
+else
+  echo "NORMAL"  
+  sed -i.bak "s/.*GRUB_GFXMODE.*/GRUB_GFXMODE=${RES}/g" /etc/default/grub
+fi
+exit
 
 # for hamonikr os  
 if [[ -f "/etc/hamonikr/info" ]] ; then
