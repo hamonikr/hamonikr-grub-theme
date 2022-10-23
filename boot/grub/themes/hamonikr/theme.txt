@@ -1,4 +1,5 @@
-# Copyright 2018, "fffred" <fredpz@zoho.eu>
+# HamoniKR OS GRUB theme
+# Copyright 2022, HamoniKR <pkg@hamonikr.org>
 
 # Primitivistical is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -13,8 +14,15 @@
 # You should have received a copy of the GNU General Public License
 # along with Primitivistical.  If not, see <https://www.gnu.org/licenses/>.
 
+# https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html
+# https://help.ubuntu.com/community/Grub2/Displays
+# The image is of the proper size & format (8-bit JPG/JPEG, PNG, or TGA)
+# The file is an RGB, non-indexed image.
+
 title-text: ""
 desktop-image: "background.png"
+# stretch, crop, padding, fitwidth, fitheight, 
+desktop-image-scale-method: "crop"
 desktop-color: "#000000"
 terminal-font: "Unifont Regular 16"
 terminal-left: "0"

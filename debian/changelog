@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.1.2) taebaek; urgency=medium
+
+  * Change background image
+  * Add propertie : desktop-image-scale-method: "crop"
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 23 Oct 2022 15:38:53 +0900
+
 hamonikr-grub-theme (3.1.1) taebaek; urgency=medium
 
   * Update for HIDPI resolution
