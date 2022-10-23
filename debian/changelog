@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.1.3) taebaek; urgency=medium
+
+  * Change background image as black
+   - high resolution image (2560x1600)
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 23 Oct 2022 22:30:27 +0900
+
 hamonikr-grub-theme (3.1.2) taebaek; urgency=medium
 
   * Change background image
