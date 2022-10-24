@@ -22,7 +22,7 @@
 title-text: ""
 desktop-image: "background.png"
 # stretch, crop, padding, fitwidth, fitheight, 
-desktop-image-scale-method: "crop"
+desktop-image-scale-method: "stretch"
 desktop-color: "#000000"
 terminal-font: "Unifont Regular 16"
 terminal-left: "0"

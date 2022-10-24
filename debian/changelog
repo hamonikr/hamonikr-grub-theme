@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.1.4) taebaek; urgency=medium
+
+  * Change background image setting
+   - desktop-image-scale-method: "stretch"
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 24 Oct 2022 10:59:08 +0900
+
 hamonikr-grub-theme (3.1.3) taebaek; urgency=medium
 
   * Change background image as black
