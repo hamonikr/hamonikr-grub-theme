@@ -1,30 +1,12 @@
-# HamoniKR OS GRUB theme
-# Copyright 2022, HamoniKR <pkg@hamonikr.org>
-
-# Primitivistical is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-# 
-# Primitivistical is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-# 
-# You should have received a copy of the GNU General Public License
-# along with Primitivistical.  If not, see <https://www.gnu.org/licenses/>.
-
+# HamoniKR 6.0 LTS taebaek GRUB theme
+#
 # https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html
 # https://help.ubuntu.com/community/Grub2/Displays
-# The image is of the proper size & format (8-bit JPG/JPEG, PNG, or TGA)
-# The file is an RGB, non-indexed image.
 
-title-text: ""
 desktop-image: "background.png"
-# stretch, crop, padding, fitwidth, fitheight, 
 desktop-image-scale-method: "stretch"
-desktop-color: "#000000"
-terminal-font: "Unifont Regular 16"
+title-text: ""
+terminal-font: "D2Coding Regular 18"
 terminal-left: "0"
 terminal-top: "0"
 terminal-width: "100%"
@@ -39,23 +21,40 @@ terminal-border: "0"
     width = 100%
     align = "center"
     color = "#ddd"
-	font = "NanumSquare Regular 16"
+	font = "D2Coding Regular 16"
 }
 
 + boot_menu {
+    menu_pixmap_style = "boot_menu_*.png"
     left = 20%
-    top = 30%
     width = 60%
-    height = 70%
-    icon_width = 25
-    icon_height = 25
-	item_font = "NanumSquare Regular 16"
-    item_icon_space = 7
-    item_height = 35
-    item_spacing = 10
-    item_color = "#ddd"
-    item_pixmap_style = "item_*.png"
-    selected_item_color = "#fff"
-    selected_item_pixmap_style = "selected_*.png"
+    top = 20%
+    height = 60%
+    item_font = "D2Coding Regular 16"
+    item_color = "#6b6b6b"
+    selected_item_font = "Gothic A1 Bold 16"
+    selected_item_color = "#ffffff"
+    icon_width = 48
+    icon_height = 48
+    item_icon_space = 24
+    item_height = 56
+    item_padding = 4
+    item_spacing = 8
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = true
+    scrollbar_width = 10
+    scrollbar_thumb = "slider_*.png"
 }
 
+# + progress_bar {
+#     id = "__timeout__"
+#     left = 24%
+#     width = 52%
+#     top = 90%
+#     height = 3
+#     text = ""
+#     text_color = "#ffffff"
+#     font = "D2Coding Regular 16"
+#     bar_style = "progress_bar_*.png"
+#     highlight_style = "progress_highlight_*.png"
+# }

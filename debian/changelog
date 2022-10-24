@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.1.5) taebaek; urgency=medium
+
+  * Release new grub theme
+   - include Korean env
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 24 Oct 2022 14:24:43 +0900
+
 hamonikr-grub-theme (3.1.4) taebaek; urgency=medium
 
   * Change background image setting

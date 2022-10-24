@@ -29,18 +29,24 @@ if [[ -f "/etc/hamonikr/info" ]] ; then
   else
     echo "Found HamoniKR OS Infomation"
     OSNAME=$( sed -n '/GRUB_TITLE=/p' /etc/hamonikr/info | cut -d'=' -f2 | sed 's/"//g' ) >/dev/null 2>&1
-    sed -i '/GRUB_DISTRIBUTOR=/d' /etc/default/grub >/dev/null 2>&1
+    sed -i.bak '/GRUB_DISTRIBUTOR=/d' /etc/default/grub >/dev/null 2>&1
     echo "GRUB_DISTRIBUTOR=\"${OSNAME}\"" >> /etc/default/grub
   fi
 fi
 
+if [ -f "/etc/default/grub" ] ; then
+  # Set theme
+  echo -e "Setting ${THEME_NAME} as default..."
 
-# Set theme
-echo -e "Setting ${THEME_NAME} as default..."
-grep "GRUB_THEME=" /etc/default/grub 2>&1 >/dev/null && sed -i '/GRUB_THEME=/d' /etc/default/grub
-sed -i '/GRUB_TIMEOUT=/d' /etc/default/grub >/dev/null 2>&1
-echo "GRUB_TIMEOUT=5" >> /etc/default/grub 
-[[ -d /boot/grub ]] && echo "GRUB_THEME=\"${THEME_DIR}/${THEME_NAME}/theme.txt\"" >> /etc/default/grub
+  sed -i.bak '/GRUB_CMDLINE_LINUX_DEFAULT=/d' /etc/default/grub >/dev/null 2>&1
+  echo "GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash LANG=ko_KR\"" >> /etc/default/grub   
+
+  grep "GRUB_THEME=" /etc/default/grub 2>&1 >/dev/null && sed -i.bak '/GRUB_THEME=/d' /etc/default/grub
+  [[ -d /boot/grub ]] && echo "GRUB_THEME=\"${THEME_DIR}/${THEME_NAME}/theme.txt\"" >> /etc/default/grub  
+
+  sed -i.bak '/GRUB_TIMEOUT=/d' /etc/default/grub >/dev/null 2>&1
+  echo "GRUB_TIMEOUT=5" >> /etc/default/grub 
+fi
 
 # Update grub config
 echo -e "Updating grub config..."
