@@ -38,8 +38,8 @@ if [ -f "/etc/default/grub" ] ; then
   # Set theme
   echo -e "Setting ${THEME_NAME} as default..."
 
-  sed -i.bak '/GRUB_CMDLINE_LINUX_DEFAULT=/d' /etc/default/grub >/dev/null 2>&1
-  echo "GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash LANG=ko_KR\"" >> /etc/default/grub   
+  # sed -i.bak '/GRUB_CMDLINE_LINUX_DEFAULT=/d' /etc/default/grub >/dev/null 2>&1
+  # echo "GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash LANG=ko_KR\"" >> /etc/default/grub   
 
   grep "GRUB_THEME=" /etc/default/grub 2>&1 >/dev/null && sed -i.bak '/GRUB_THEME=/d' /etc/default/grub
   [[ -d /boot/grub ]] && echo "GRUB_THEME=\"${THEME_DIR}/${THEME_NAME}/theme.txt\"" >> /etc/default/grub  
