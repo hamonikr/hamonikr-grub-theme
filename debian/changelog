@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.1.8) taebaek; urgency=medium
+
+  * Changed new background
+   - HamoniKR 6.0 LTS taebaek version
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 27 Oct 2022 00:49:09 +0900
+
 hamonikr-grub-theme (3.1.7) taebaek; urgency=medium
 
   * Add exception handling in postinst
