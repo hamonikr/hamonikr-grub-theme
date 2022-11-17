@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.1.9) taebaek; urgency=medium
+
+  * Support LDME and debian bullseye
+   - Update for LDME 5
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 18 Nov 2022 00:42:46 +0900
+
 hamonikr-grub-theme (3.1.8) taebaek; urgency=medium
 
   * Changed new background
