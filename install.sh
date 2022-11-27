@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# grub-theme-hamonikr-jin
+# grub-theme-hamonikr
 # Copyright (C) 2019 Kevin Kim (root@hamonikr.org)
 # - 사용자 해상도 자동 감지 후 테마 적용
 # - 와이드 스크린의 경우 자동으로 비율을 계산
@@ -22,7 +22,7 @@
 ROOT_UID=0
 THEME_DIR="/boot/grub/themes"
 THEME_DIR_2="/boot/grub2/themes"
-THEME_NAME=hamonikr-jin
+THEME_NAME=hamonikr
 
 # Welcome message
 echo -e "\n\t*****************************\n\t*  ${THEME_NAME} - Grub2 Theme  *\n\t*****************************"

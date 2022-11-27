@@ -6,7 +6,7 @@
 desktop-image: "background.png"
 desktop-image-scale-method: "stretch"
 title-text: ""
-terminal-font: "D2Coding Regular 20"
+terminal-font: "Terminus (TTF) Regular 16"
 terminal-left: "0"
 terminal-top: "0"
 terminal-width: "100%"
@@ -21,40 +21,40 @@ terminal-border: "0"
     width = 100%
     align = "center"
     color = "#ddd"
-	font = "D2Coding Regular 20"
+	font = "Terminus (TTF) Regular 16"
 }
 
 + boot_menu {
     menu_pixmap_style = "boot_menu_*.png"
-    left = 20%
-    width = 60%
-    top = 20%
-    height = 60%
-    item_font = "D2Coding Regular 20"
+    left = 15%
+    width = 70%
+    top = 25%
+    height = 50%
+    item_font = "D2Coding Regular 16"
     item_color = "#6b6b6b"
-    selected_item_font = "D2Coding Regular 21"
+    selected_item_font = "D2Coding Regular 16"
     selected_item_color = "#ffffff"
-    icon_width = 48
-    icon_height = 48
-    item_icon_space = 24
-    item_height = 56
-    item_padding = 4
-    item_spacing = 8
+    icon_width = 24
+    icon_height = 24
+    item_icon_space = 12
+    item_height = 28
+    item_padding = 2
+    item_spacing = 4
     selected_item_pixmap_style = "select_*.png"
     scrollbar = true
     scrollbar_width = 10
     scrollbar_thumb = "slider_*.png"
 }
 
-# + progress_bar {
-#     id = "__timeout__"
-#     left = 24%
-#     width = 52%
-#     top = 90%
-#     height = 3
-#     text = ""
-#     text_color = "#ffffff"
-#     font = "D2Coding Regular 20"
-#     bar_style = "progress_bar_*.png"
-#     highlight_style = "progress_highlight_*.png"
-# }
+#+ progress_bar {
+#    id = "__timeout__"
+#    left = 20%
+#    width = 60%
+#    top = 85%
+#    height = 1
+#    text = ""
+#    text_color = "#ffffff"
+#    font = "D2Coding Regular 13"
+#    bar_style = "progress_bar_*.png"
+#    highlight_style = "progress_highlight_*.png"
+#}

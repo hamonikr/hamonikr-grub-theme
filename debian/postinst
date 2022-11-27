@@ -18,6 +18,7 @@ if [ ! -z "$WIDTH" ] ; then
   if [ "$WIDTH" -gt "1920" ] ; then
     # echo "HIDPI"
     sed -i.bak "s/.*GRUB_GFXMODE.*/GRUB_GFXMODE=1920x1080/g" /etc/default/grub
+    sed -i.bak "s/Terminus (TTF) Regular 16/Terminus (TTF) Regular 32/g" /boot/grub/themes/hamonikr/theme.txt
   else
     # echo "NORMAL"  
     sed -i.bak "s/.*GRUB_GFXMODE.*/GRUB_GFXMODE=${RES}/g" /etc/default/grub
