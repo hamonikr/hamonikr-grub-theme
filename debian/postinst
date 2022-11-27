@@ -51,6 +51,27 @@ if [ -f "/etc/default/grub" ] ; then
   echo "GRUB_TIMEOUT=5" >> /etc/default/grub 
 fi
 
+## Support LDME and debian bullseye
+if [ ! -f "/etc/hamonikr/.bak/os-release.bak" ]; then
+  CODENAME=$(lsb_release -c -s)
+  if [ "X${CODENAME}" == "Xelsie" ] ||  [ "X${CODENAME}" == "Xbullseye" ] ; then
+    echo "#! /bin/sh" > /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo "set -e" >> /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo ""  >> /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo "GRUB_THEME=\"/boot/grub/themes/hamonikr/theme.txt\""  >> /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo "GRUB_TIMEOUT=5"  >> /etc/default/grub.d/90_hamonikr-theme.cfg
+  fi
+else
+  CODENAME=$(cat /etc/hamonikr/.bak/os-release.bak | grep VERSION_CODENAME | cut -d= -f2 )
+  if [ "X${CODENAME}" == "Xelsie" ] ||  [ "X${CODENAME}" == "Xbullseye" ] ; then
+    echo "#! /bin/sh" > /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo "set -e" >> /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo ""  >> /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo "GRUB_THEME=\"/boot/grub/themes/hamonikr/theme.txt\""  >> /etc/default/grub.d/90_hamonikr-theme.cfg
+    echo "GRUB_TIMEOUT=5"  >> /etc/default/grub.d/90_hamonikr-theme.cfg
+  fi
+fi
+
 # Update grub config
 echo -e "Updating grub config..."
 if has_command update-grub; then
