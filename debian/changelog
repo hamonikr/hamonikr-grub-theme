@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.2.0) unstalbe; urgency=medium
+
+  * Relase for HamoniKR hx
+   - Build on LDME 5 i386
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 02 Dec 2022 14:12:03 +0900
+
 hamonikr-grub-theme (3.1.9) taebaek; urgency=medium
 
   * Support LDME and debian bullseye
