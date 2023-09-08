@@ -1,4 +1,11 @@
-hamonikr-grub-theme (3.3.0) stalbe; urgency=medium
+hamonikr-grub-theme (3.3.1) stable; urgency=medium
+
+  * Relase for Ubuntu 22.04
+   - fixed check logic with hamonikr-system in postinst
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 08 Sep 2023 12:35:17 +0900
+
+hamonikr-grub-theme (3.3.0) stable; urgency=medium
 
   * Relase for Ubuntu 22.04
 

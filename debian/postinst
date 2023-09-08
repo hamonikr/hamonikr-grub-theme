@@ -82,9 +82,11 @@ fi
 
 if which systemctl >/dev/null 2>&1
 then
-    if [ $(systemctl is-enabled hamonikr-system) = "disabled" ] ; then
-      systemctl enable hamonikr-system.service
-      systemctl daemon-reload
+    if [ "x$(systemctl is-active hamonikr-system)" = "xactive" ] ; then
+      if [ "x$(systemctl is-enabled hamonikr-system)" = "xdisabled" ] ; then
+        systemctl enable hamonikr-system.service
+        systemctl daemon-reload
+      fi
     fi
 fi
 
