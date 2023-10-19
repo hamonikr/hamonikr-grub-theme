@@ -75,17 +75,17 @@ fi
 # Update grub config
 echo -e "Updating grub config..."
 if has_command update-grub; then
-    update-grub
+    update-grub || echo "Failed to update grub. Skipping."
 elif has_command grub-mkconfig; then
-    grub-mkconfig -o /boot/grub/grub.cfg
+    grub-mkconfig -o /boot/grub/grub.cfg || echo "Failed to update grub. Skipping."
 fi
 
 if which systemctl >/dev/null 2>&1
 then
     if [ "x$(systemctl is-active hamonikr-system)" = "xactive" ] ; then
       if [ "x$(systemctl is-enabled hamonikr-system)" = "xdisabled" ] ; then
-        systemctl enable hamonikr-system.service
-        systemctl daemon-reload
+        systemctl enable hamonikr-system.service || echo "Failed to enable service. Skipping."
+        systemctl daemon-reload || echo "Failed to reload daemon. Skipping."
       fi
     fi
 fi

@@ -1,3 +1,10 @@
+hamonikr-grub-theme (3.3.2) stable; urgency=medium
+
+  * Release for HamoniKR 7.0
+   - Add Exception handling in postinst
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 19 Oct 2023 20:49:57 +0900
+
 hamonikr-grub-theme (3.3.1) stable; urgency=medium
 
   * Relase for Ubuntu 22.04
